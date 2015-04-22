@@ -5,8 +5,8 @@ require(__DIR__ . "/functions.php");
 
 // set up config
 Openclerk\Config::merge(array(
-  "site_name" => "quickstart",
-  "absolute_url" => is_localhost() ? "http://localhost/quickstart/" : "http://example.com/",
+  "site_name" => "cv",
+  "absolute_url" => is_localhost() ? "http://localhost/cv/" : "https://jevon.org/cv/",
   "display_errors" => is_localhost(),
 ));
 
@@ -17,6 +17,7 @@ Openclerk\Config::merge(array(
 
 // set up pages
 \Pages\PageRenderer::addTemplatesLocation(__DIR__ . "/../site/templates");
+\Pages\PageRenderer::addTemplatesLocation(__DIR__ . "/../private/templates");
 \Pages\PageRenderer::addStylesheet(\Openclerk\Router::urlFor("css/default.css"));
 \Pages\PageRenderer::addJavascript("https://code.jquery.com/jquery-2.1.1.min.js");
 \Pages\PageRenderer::addJavascript(\Openclerk\Router::urlFor("js/default.js"));

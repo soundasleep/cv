@@ -1,0 +1,26 @@
+.section
+  %h2 Contact Details
+
+  %dl
+    %dt Name
+    %dd Dr Jevon Wright
+
+    %dt Born
+    %dd 31 May 1985
+
+    != require_template("_contact_private")
+
+    %dt Email
+    %dd != link_to("mailto:jevon@jevon.org", "jevon@jevon.org")
+
+    %dt Web
+    %dd != link_to("https://jevon.org")
+
+    %dt Twitter
+    %dd != link_to("https://twitter.com/soundasleep", "@soundasleep")
+
+    %dt LinkedIn
+    %dd != link_to("http://nz.linkedin.com/in/jevonwright")
+
+    %dt Member of
+    %dd IEEE (2009&ndash;), InternetNZ (2010&ndash;), IITP (formerly NZSC, 2010&ndash;)

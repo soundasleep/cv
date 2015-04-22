@@ -1,6 +1,6 @@
 <?php
 
-page_header("Home", "page_index");
+page_header("Jevon Wright CV", "page_index");
 require_template("home");
 page_footer();
 

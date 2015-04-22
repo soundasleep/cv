@@ -4,5 +4,7 @@ $content-background: #fff;
 $content-color: #000;
 $body-background: #eee;
 $body-color: #111;
-$link-color: #33f;
+$link-color: $content-color;
 $link-hover: #939;
+
+$term-width: 17%;

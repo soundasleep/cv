@@ -1,15 +1,20 @@
 .home
-  %h1 Quickstart
+  .title
+    %h1 Curriculum Vitae
+    %h2 April 2015
 
-  %p
-    %a{:href => "https://github.com/soundasleep/quickstart"} Quickstart
-    is a barebones PHP application, set up with common web development
-    frameworks, which you can quickly clone or copy to jump straight into a new web project.
+  != require_template("_contact")
 
-  %h2 Features
+  != require_template("_qualifications")
 
-  %ul
-    %li Coffeescript is compiled into Javascript
-    %li SCSS is compiled into CSS
-    %li HAML is compiled into HTML using templates
-    %li CSS images are spritified using spritify
+  != require_template("_skills")
+
+  != require_template("_open-source")
+
+  != require_template("_history")
+
+  != require_template("_publications")
+
+  != require_template("_community")
+
+  != require_template("_references")
