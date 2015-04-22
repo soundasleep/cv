@@ -9,7 +9,12 @@ body {
   font-size: 15px;
 
   @media print {
-    margin: 20px 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media all and (max-width: $tablet) {
+    margin: 0;
     padding: 0;
   }
 }
@@ -26,8 +31,13 @@ body {
   line-height: 130%;
 
   @media print {
+    padding: 20px 25px;
     margin: 0;
-    padding: 0;
+  }
+
+  @media all and (max-width: $tablet) {
+    padding: 20px 25px;
+    margin: 0;
   }
 
   h1 {

@@ -60,6 +60,10 @@ dl {
     clear: both;
     text-align: right;
     vertical-align: top;
+
+    @media all and (max-width: $tablet) {
+      width: $term-width-mobile;
+    }
   }
 
   dd {
@@ -68,6 +72,10 @@ dl {
     border-left: thin solid #999;
     margin-left: 10px;
     padding-left: 10px;
+
+    @media all and (max-width: $tablet) {
+      width: (100% - $term-width-mobile) * 0.90;
+    }
 
     ul {
       list-style: none;
@@ -103,6 +111,7 @@ table {
   td {
     width: 50%;
     padding-bottom: 20px;
+    vertical-align: top;
   }
 }
 
