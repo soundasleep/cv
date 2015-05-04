@@ -72,3 +72,33 @@ a {
     text-decoration: underline;
   }
 }
+
+.key-skills {
+  margin: 0 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.columns3 {
+  width: 100%;
+
+  .column {
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+
+.columns2 {
+  width: 100%;
+
+  .column {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+  }
+}
