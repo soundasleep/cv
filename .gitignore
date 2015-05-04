@@ -5,3 +5,4 @@ site/js/*.js
 site/images/sprites.png
 .sass-cache/
 private/
+.svn/

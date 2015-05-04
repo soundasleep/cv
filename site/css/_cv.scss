@@ -39,6 +39,10 @@
 
 .private {
   background: #fee;
+
+  @media print {
+    background: default;
+  }
 }
 
 h2 {
@@ -93,6 +97,9 @@ dl {
       }
 
       &.skills {
+        li:first-child {
+          margin-top: 0;
+        }
         li {
           margin: 3px 0;
         }
