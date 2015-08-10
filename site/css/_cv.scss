@@ -22,11 +22,13 @@
   }
 
   &.history {
+    $history-ratio: 0.75;
+
     dt {
-      width: $term-width * 0.7;
+      width: $term-width * $history-ratio;
     }
     dd {
-      width: (100% - ($term-width * 0.7)) * 0.95;
+      width: (100% - ($term-width * $history-ratio)) * 0.95;
     }
   }
 
